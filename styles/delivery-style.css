@@ -1,0 +1,39 @@
+.delivery .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 78px;
+}
+.delivery p{
+    margin-bottom: 15px;
+}
+.delivery-ttl{
+    width: 32%;
+}
+.delivery-table{
+    width: 60%;
+}
+.delivery-table .price-table{
+    width: 100%;
+}
+.delivery-table .price-table tr:first-child{
+    border-top: none;
+}
+
+@media (max-width: 850px){
+    .delivery .container{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .delivery-ttl{
+        width: 100%;
+    }
+    .delivery-table{
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .delivery-table .price-table tr{
+        grid-template-columns: 100px 80px 80px;
+        column-gap: 10px;
+    }
+}

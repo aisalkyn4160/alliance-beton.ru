@@ -1,0 +1,93 @@
+.prices .container{
+    display: flex;  
+    justify-content: space-between;
+    gap: 78px
+}
+.price-list{
+    width: 60%;
+}
+.price-list li{
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(214, 214, 214, 1)
+}
+.price-list li:last-child{
+    border-bottom: none;
+}
+.price-ttl-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.price-ttl-btn.active{
+    margin-bottom: 20px;
+}
+.collapse-btn{
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.price-ttl-btn.active .collapse-btn svg{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;	
+}
+.price-ttl-btn.active .price-ttl{
+    color: rgba(242, 153, 0, 1);
+}   
+.price-ttl-btn.active:hover .price-ttl{
+    color: rgba(242, 153, 0, 1);
+}
+.price-ttl{
+    margin-bottom: 0;
+    transition: all 0.3s ease-out;
+}
+.price-ttl-btn:hover .price-ttl{
+    color: rgba(101, 101, 101, 1);
+}
+.price-content{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.price-table{
+    width: 100%;
+    cursor: context-menu;
+}
+.price-table tr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    column-gap: 77px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(214, 214, 214, 1)
+}
+.price-table tr:last-child{
+    padding-bottom: 0;
+}
+.price-table th{
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    text-align: left;
+}
+.price{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (max-width: 950px){
+    .prices .container{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .price-list{
+        width: 100%;
+    }
+    .price-table tr{
+        column-gap: 13px;
+    }
+    .price{
+        font-size: 16px;
+    }
+}

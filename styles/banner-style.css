@@ -1,0 +1,52 @@
+.banner{
+    padding-top: 0;
+    padding-bottom: 527px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-ttl{
+    padding: 40px 0;
+    background-color: rgba(241, 241, 241, 1);
+}
+.banner-ttl .container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.banner-ttl h1{
+    max-width: 685px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.banner-content p{
+    padding-top: 14.5px;
+
+}
+
+@media (max-width: 600px){
+    .banner{
+        padding-bottom: 198px;
+        background-position:  center 200px;
+    }
+    .banner-ttl .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-ttl {
+        padding: 24px 0;
+    }
+    .banner-content{
+        gap: 16px;
+    }
+    .banner-content p{
+        padding-top: 0;
+    }
+
+}
