@@ -4,7 +4,6 @@
     position: relative;
 }
 .advantages-ttl{
-    /* width: 34%; */
     width: 409px;
 }
 .advantages-list{
@@ -17,6 +16,7 @@
     gap: 40px;
     border-top: 1px solid rgba(214, 214, 214, 1);
     padding: 24px 0;
+    
 }
 .advantages-list li:first-child{
     border-top: none;
@@ -38,24 +38,17 @@
     left: 15px;
     width: 409px;
     height: 260px;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none; 
 }
-.active-img2,
-.active-img3{
-    opacity: 0;
-    transition: all 0.5s ease-out;
+.active-img,
+.active-img{
+    transition: opacity 0.5s ease-out;
 }
-.advantages-list li:nth-child(2):hover  .default-img{
-    opacity: 0;
+.advantages-list li:hover .active-img{
+    z-index: 1;
 }
-.advantages-list li:nth-child(2):hover  .active-img2{
-    opacity: 1;
-}
-.advantages-list li:nth-child(3):hover  .default-img{
-    opacity: 0;
-}
-.advantages-list li:nth-child(3):hover  .active-img3{
-    opacity: 1;
-}
+
 
 @media (max-width: 1050px){
     .advantages .container{

@@ -15,7 +15,8 @@
 }
 .footer-top{
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 .footer-nav .nav-menu ul{
@@ -30,6 +31,7 @@
 }
 .footer-adress{
     max-width: 219px;
+    line-height: 22px;
 }
 .mail{
     color: rgba(242, 153, 0, 1);
@@ -56,16 +58,14 @@
     gap: 4px;
 }
 
-@media (max-width: 975px){
+@media (max-width: 815px){
     .footer-top{
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 40px;
     }
     .footer-nav .nav-menu ul{
         grid-template-columns: 125px 125px;
     }
-}
-@media (max-width: 850px){
     .footer-bottom{
         flex-direction: column;
         gap: 20px;
